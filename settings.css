@@ -1,0 +1,98 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #6a1b9a, #2c003e);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #6a1b9a;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Main container */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Profile & Password sections */
+section {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #ffd700;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Sidebar buttons */
+.sideba{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar button {
+  background: #fff;
+  color: #6a1b9a;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar button:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+/* Update button */
+.update-btn {
+  grid-column: span 2;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.update-btn button {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.update-btn button:hover {
+  background: #fff;
+  color: #6a1b9a;
+}
+
+a{
+    text-decoration: none;
+}

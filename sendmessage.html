@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confessout - Message Form</title>
+  <link rel="stylesheet" href="sendmessage.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Confessout</h1>
+    <h2>Send private message to <span class="username">Lester</span></h2>
+
+    <form>
+      <textarea 
+        id="message" 
+        maxlength="300" 
+        placeholder="Leave a message for Lester.."></textarea>
+      <p id="charCount">Characters Left: 300</p>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="footer">
+      Say what you think about or leave a feedback anonymously using the form above..
+    </p>
+  </div>
+
+  <script>
+    // Character counter logic
+    const textarea = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    textarea.addEventListener('input', () => {
+      const remaining = 300 - textarea.value.length;
+      charCount.textContent = `Characters Left: ${remaining}`;
+    });
+  </script>
+</body>
+</html>

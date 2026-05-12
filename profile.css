@@ -1,0 +1,187 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#d9d9d9;
+    overflow-x:hidden;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:relative;
+    width:100%;
+    height:92px;
+
+    background:
+    linear-gradient(rgba(82,0,120,.9), rgba(82,0,120,.9)),
+    url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1974&auto=format&fit=crop");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+
+    padding:18px 28px;
+
+    overflow:hidden;
+}
+
+.logo{
+    color:white;
+    font-size:38px;
+    font-weight:300;
+    z-index:2;
+}
+
+.settings{
+    color:white;
+    font-size:42px;
+    z-index:2;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    width:100%;
+    background:#f3f3f3;
+
+    border-bottom-left-radius:18px;
+    border-bottom-right-radius:18px;
+
+    padding-top:35px;
+    padding-bottom:65px;
+
+    text-align:center;
+}
+
+.card h2{
+    font-size:60px;
+    font-weight:300;
+    color:black;
+
+    margin-bottom:35px;
+}
+
+.text{
+    font-size:24px;
+    color:black;
+
+    margin-bottom:38px;
+}
+
+.link{
+    text-decoration:none;
+
+    color:red;
+
+    font-size:58px;
+    font-weight:300;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    width:100%;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    margin-top:28px;
+
+    
+}
+
+.item{
+    text-align:center;
+}
+
+.circle{
+    width:190px;
+    height:190px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:auto;
+
+    box-shadow:
+    inset 0 0 18px rgba(255,255,255,.3),
+    0 4px 8px rgba(0,0,0,.15);
+}
+
+.circle i{
+    color:white;
+    font-size:92px;
+}
+
+.green{
+    background:#17c617;
+}
+
+.blue{
+    background:#3d78ff;
+}
+
+.item p{
+    margin-top:18px;
+
+    font-size:44px;
+    font-weight:300;
+
+    color:black;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .card h2{
+        font-size:42px;
+    }
+
+    .link{
+        font-size:28px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        gap:50px;
+        padding-bottom:40px;
+    }
+
+    .circle{
+        width:150px;
+        height:150px;
+    }
+
+    .circle i{
+        font-size:70px;
+    }
+
+    .item p{
+        font-size:30px;
+    }
+}
+
+.custom-text {
+  position: absolute;
+  top: 4%;   /* vertical position */
+  left: 98.6%;  /* horizontal position */
+  transform: translate(-50%, -50%); /* centers it */
+  font-size: 16px;
+  color: red;
+}
